@@ -211,8 +211,8 @@ set relativenumber
 
 
 " ## switch line number shortcut key
-nnoremap <Leader>l :set number!<CR>
-nnoremap <leader>n :set relativenumber!<CR>
+nnoremap <Bslash>l :set number!<CR>
+nnoremap <Bslash>n :set relativenumber!<CR>
 nnoremap ,n :set nonumber<CR>:set norelativenumber<CR>
 nnoremap ,l :set number<CR>:set relativenumber<CR>
 
@@ -358,7 +358,7 @@ set list
 
 
 " ## switch invisible chars
-nnoremap <Leader>a :set list!<CR>
+nnoremap <Bslash>a :set list!<CR>
 
 ""
 """ Tail: Option - Show Invisibles
@@ -546,10 +546,10 @@ nnoremap ,s :w<CR>
 ""
 
 " ## delete buffer
-"nnoremap <Leader>q :bdelete<CR>
-"nnoremap <Leader>x :%bdelete<CR>
-"nnoremap <Leader>z :bdelete!<CR>
-"nnoremap <Leader>c :%bdelete!<CR>
+"nnoremap <Bslash>q :bdelete<CR>
+"nnoremap <Bslash>x :%bdelete<CR>
+"nnoremap <Bslash>z :bdelete!<CR>
+"nnoremap <Bslash>c :%bdelete!<CR>
 
 
 
@@ -569,10 +569,10 @@ nnoremap ,s :w<CR>
 ""
 
 " ## delete buffer
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :qa<CR>
-nnoremap <Leader>z :q!<CR>
-nnoremap <Leader>c :qa!<CR>
+nnoremap <Bslash>q :q<CR>
+nnoremap <Bslash>x :qa<CR>
+nnoremap <Bslash>z :q!<CR>
+nnoremap <Bslash>c :qa!<CR>
 
 
 " ## quit
