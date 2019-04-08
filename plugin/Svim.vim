@@ -1013,9 +1013,9 @@ set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
 ""
 
 " :help 'mouse'
-"set mouse=
+set mouse=
 "set mouse=a
-set mouse=nv
+"set mouse=nv
 
 ""
 """ Tail: Mouse
