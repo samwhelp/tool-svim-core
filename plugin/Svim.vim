@@ -480,7 +480,7 @@ nnoremap ,r :registers<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Fit
+""" Head: Option
 ""
 
 " ## for close
@@ -503,17 +503,13 @@ set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1
 set hidden
 
 ""
-""" Tail: Fit
+""" Tail: Option
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Buffer
 ""
-
-
-
 
 " ## switch buffer
 nnoremap ,` :bprevious<CR>
@@ -523,7 +519,7 @@ nnoremap <C-Down> :bnext<CR>
 nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
 " Note: collision <CTRL+\>
-" :help index.txt
+" :help index.txt 
 " :help mode-switching
 "nnoremap <C-Bslash> :bnext<CR>
 
@@ -535,7 +531,9 @@ nnoremap ,b :ls<CR>
 
 
 " ## save
-nnoremap ,s :w<CR>
+"nnoremap ,s :w<CR>
+nnoremap <S-Tab> :w<CR>
+inoremap <S-Tab> <Esc>:w<CR>a
 
 ""
 """ Tail: Buffer
