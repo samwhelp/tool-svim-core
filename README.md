@@ -6,7 +6,9 @@
 ## Doc
 
 * [tool-svim-doc](https://samwhelp.github.io/tool-svim-doc)
-
+* :help [keycodes](https://vimhelp.org/intro.txt.html#keycodes)
+* :help [normal-index](https://vimhelp.org/index.txt.html#normal-index)
+* :help [insert-index](https://vimhelp.org/index.txt.html#insert-index)
 
 ## Vimrc
 
@@ -121,8 +123,9 @@ I use (,) and (t) for my leader key.
 
 | Key | Map | Description |
 | --- | --- | --- |
-| `,s` | [:w](https://vimhelp.org/editing.txt.html#:w)&lt;CR&gt; | Write the whole buffer to the current file. |
+| `<S-Tab>` | [:w](https://vimhelp.org/editing.txt.html#:w)&lt;CR&gt; | Write the whole buffer to the current file. |
 
+> Work on Normal Mode and Insert Mode
 
 
 ## TabPage
