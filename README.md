@@ -3,12 +3,13 @@
 * [tool-svim-core](https://samwhelp.github.io/tool-svim-core) ([GitHub](https://github.com/samwhelp/tool-svim-core))
 
 
-## Doc
+## Vim Doc
 
 * [tool-svim-doc](https://samwhelp.github.io/tool-svim-doc)
 * :help [keycodes](https://vimhelp.org/intro.txt.html#keycodes)
 * :help [normal-index](https://vimhelp.org/index.txt.html#normal-index)
 * :help [insert-index](https://vimhelp.org/index.txt.html#insert-index)
+
 
 ## Vimrc
 
@@ -20,13 +21,19 @@
 * [Leader Key](#leader-key)
 * [Quick Switch](#quick-switch)
 * [Window Resize](#window-resize)
+* [Window Create](#window-create)
 * [Delete Buffer](#delete-buffer)
 * [Quit](#quit)
 * [Hide](#hide)
+* [Close](#close)
 * [Only](#only)
-* [Buffer List](#buffer-list)
+* [Buffers](#buffers)
+* [Registers](#registers)
+* [Marks](#marks)
 * [Save](#save)
 * [TabPage](#tabpage)
+* [Switch TabPage](#switch-tabpage)
+* [Tab Move](#tab-move)
 * [Line Move](#line-move)
 
 
@@ -75,13 +82,23 @@ I use (,) and (t) for my leader key.
 | `<S-Right>` | [&lt;C-w&gt;>](https://vimhelp.org/windows.txt.html#CTRL-W_>) |
 
 
+## Window Create
+
+| Key | Map | Description |
+| --- | --- | --- |
+| `,wn` | [:new](https://vimhelp.org/windows.txt.html#:new)&lt;CR&gt; | Create a new window horizontally. |
+| `,wv` | [:vnew](https://vimhelp.org/windows.txt.html#:vnew)&lt;CR&gt; | Create a new window vertically. |
+
+> Please read :help [window](https://vimhelp.org/windows.txt.html#:window).
+
+
 ## Delete Buffer
 
 | Key | Map | Description | Notice |
 | --- | --- | --- | --- |
 | `,q` | [:bdelete](https://vimhelp.org/windows.txt.html#:bdelete)&lt;CR&gt; | delete current buffer | single |
-| `,x` | [:%bdelete](https://vimhelp.org/windows.txt.html#:bdelete)&lt;CR&gt; | delete all buffer | all |
 | `,z` | [:bdelete!](https://vimhelp.org/windows.txt.html#:bdelete)&lt;CR&gt; | force delete current buffer | single |
+| `,x` | [:%bdelete](https://vimhelp.org/windows.txt.html#:bdelete)&lt;CR&gt; | delete all buffer | all |
 | `,c` | [:%bdelete!](https://vimhelp.org/windows.txt.html#:bdelete)&lt;CR&gt; | force delete all buffer | all |
 
 
@@ -90,8 +107,8 @@ I use (,) and (t) for my leader key.
 | Key | Map | Description | Notice |
 | --- | --- | --- | --- |
 | `\q` | [:q](https://vimhelp.org/editing.txt.html#:q)&lt;CR&gt; | quit | single |
-| `\x` | [:qa](https://vimhelp.org/editing.txt.html#:qa)&lt;CR&gt; | quit all | all |
 | `\z` | [:q!](https://vimhelp.org/editing.txt.html#:q)&lt;CR&gt; | force quit | single |
+| `\x` | [:qa](https://vimhelp.org/editing.txt.html#:qa)&lt;CR&gt; | quit all | all |
 | `\c` | [:qa!](https://vimhelp.org/editing.txt.html#:qa)&lt;CR&gt; | force quit all | all |
 
 > Please read :help ['confirm'](https://vimhelp.org/options.txt.html#'confirm').
@@ -105,6 +122,14 @@ I use (,) and (t) for my leader key.
 
 > Compare with `,x`, `,c`, `\x`, `\c`, `,h`。
 
+
+## Close
+
+| Key | Map | Description |
+| --- | --- | --- |
+| `,wc` | [:close](https://vimhelp.org/windows.txt.html#:close)&lt;CR&gt; | Close the current window |
+
+
 ## Only
 
 | Key | Map | Description |
@@ -113,11 +138,25 @@ I use (,) and (t) for my leader key.
 | `twa` | [:tabonly](https://vimhelp.org/tabpage.txt.html#:tabonly)&lt;CR&gt; | wa to close other tabpage, then all buffer will hide, if set [hidden](https://vimhelp.org/options.txt.html#'hidden'). |
 
 
-## Buffer List
+## Buffers
 
 | Key | Map | Description |
 | --- | --- | --- |
 | `,b` | [:ls](https://vimhelp.org/windows.txt.html#:ls)&lt;CR&gt; | Show all buffers. |
+
+
+## Registers
+
+| Key | Map | Description |
+| --- | --- | --- |
+| `,r` | [:registers](https://vimhelp.org/change.txt.html#:registers)&lt;CR&gt; | Display all Registers. |
+
+
+## Marks
+
+| Key | Map | Description |
+| --- | --- | --- |
+| `,m` | [:marks](https://vimhelp.org/motion.txt.html#:marks)&lt;CR&gt; | List all the current marks. |
 
 
 ## Save
@@ -135,7 +174,6 @@ I use (,) and (t) for my leader key.
 | `tg` | [:tabnew](https://vimhelp.org/tabpage.txt.html#:tabnew)&lt;CR&gt; | New TabPage |
 | `tf` | [:tabnew](https://vimhelp.org/tabpage.txt.html#:tabnew)&lt;CR&gt;[:edit](https://vimhelp.org/editing.txt.html#:edit)&lt;Space&gt; | New tabpage and wait for user input file path |
 | `te` | [:tabedit](https://vimhelp.org/tabpage.txt.html#:tabedit)&lt;Space&gt; | Edit file on new tabpage. |
-
 
 
 ### Switch TabPage
