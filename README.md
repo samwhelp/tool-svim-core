@@ -91,6 +91,10 @@ I use (,) and (t) for my leader key.
 
 > Please read :help [window](https://vimhelp.org/windows.txt.html#:window).
 
+> Please compare :help [:split](https://vimhelp.org/windows.txt.html#:split).
+
+> Please compare :help [:vsplit](https://vimhelp.org/windows.txt.html#:vsplit).
+
 
 ## Delete Buffer
 
