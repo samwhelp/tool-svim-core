@@ -1168,7 +1168,9 @@ set undofile
 "set backupdir=/var/tmp/
 "set backupdir=~/.cache/vimfiles/var/backup/
 "set backupdir=~/.vim/var/backup/
-set backupdir=./.backup/,~/.cache/vimfiles/var/backup/,/tmp/
+"set backupdir=./.backup/,~/.cache/vimfiles/var/backup/,/tmp/
+set backupdir=~/.cache/vimfiles/var/backup/,/tmp/
+" $ mkdir -p ~/.cache/vimfiles/var/backup/
 
 
 " ## enable backup
